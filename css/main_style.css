@@ -1,0 +1,224 @@
+  /*Default*/
+* {
+ background: transparent;
+ word-break: break-all;
+ line-break: strict;
+ word-wrap: break-word;
+ overflow-wrap: break-word;
+ /*パディングとマージン初期値
+ padding: 0px;
+ margin: 0px;
+ */
+}
+
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+  color: #444444;
+  background-image: url("../image/trianglify_BG_gray.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  padding: 0px;
+  margin: 0px;
+}
+
+  /*navigation_menu*/
+.gnavi{
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255,255,255, 0.8);
+  border-bottom: 5px solid #FF6600;
+}
+
+div.logo {
+  background-image: url("../image/cwlogo_mini.png");
+  background-size: cover;
+  width: 115px;
+  height: 60px;
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  /*transition:0.2s;*/
+}
+
+.main{
+  margin-left: 135px;
+}
+
+nav ul li{
+  color: #222222;
+  display: inline-block;
+  width: 15%;
+  height: auto;
+  line-height: 60px;
+  font-size: 80%;
+  font-weight: 900;
+  text-align: center;
+ }
+
+nav ul li a{
+  height: auto;
+  color: inherit;
+  text-decoration: none;
+}
+
+nav ul li :hover{
+  color: #FF6600;
+}
+
+  /*top*/
+.top_contents{
+  background-image: url("../image/trianglify_BG_top.png");
+  background-size: cover;
+  back
+  width: auto;
+  height: 1024px;
+  margin-top: -16px;
+  padding: 0;
+}
+
+.cw{
+  padding: 100px 5% 0px 5%;
+  color: #FFFFFF;
+  font-size: 150%;
+}
+
+.rightside_big{
+  margin: 50px 5% 50px 5%;
+  text-align: right;
+  font-size: 125%;
+  line-height: 15px;
+  color: #3F3F3F;
+  font-weight: 900;
+}
+
+.rightside_mini{
+  margin: 0px 5% 0px 5%;
+  font-size: 80%;
+  float: right;
+}
+
+  /*quick_btn*/
+.quick_btn{
+  position: relative;
+  top:100px;
+  margin: auto 5% auto 5%;
+  width: 90%;
+  height: 150px;
+
+  float: left;
+}
+
+.quick_acs{
+  display:table-cell;
+  width: 41%;
+  height: 150px;
+  background-color: #3F3F3F;
+  float: left;
+  margin: auto 2px auto 0;
+  border-radius: 10px 0 0 10px;	/* 左上・右上・右下・左下 */
+}
+
+.quick_map a{
+    display:table-cell;
+    background-color: #3F3F3F;
+    color: #FFF;
+    text-align: center;
+    width: 19%;
+    height: 150px;
+    float: left;
+    margin: auto 2px auto 0;
+    border-radius: 10px 10px 10px 10px;	/* 左上・右上・右下・左下 */
+    text-decoration: none;
+}
+
+.quick_map p{
+  padding-top: 20px;
+}
+
+.bg_map_ico{
+  background-image: url("../image/map_ico.png") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 30% auto% 0 0;
+  position: relative;
+  top: 30px;
+  left:25%;
+  width: 50%;
+  height: 50%;
+}
+
+.quick_mail a{
+  display:table-cell;
+  background-color: #3F3F3F;
+  color: #FFF;
+  text-align: center;
+  width: 19%;
+  height: 150px;
+  float: left;
+  margin: auto 2px auto 0;
+  border-radius: 10px 10px 10px 10px;	/* 左上・右上・右下・左下 */
+  text-decoration: none;
+}
+
+.quick_mail p{
+  padding-top: 20px;
+}
+
+.bg_mail_ico{
+  background-image: url("../image/mail_ico.png") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 30% auto% 0 0;
+  position: relative;
+  top: 30px;
+  left:25%;
+  width: 50%;
+  height: 50%;
+}
+
+.quick_tel a{
+  display:table-cell;
+  background-color: #3F3F3F;
+  color: #FFF;
+  text-align: center;
+  width: 19%;
+  height: 150px;
+  float: left;
+  margin: auto 2px auto 0;
+  border-radius: 10px 10px 10px 10px;	/* 左上・右上・右下・左下 */
+  text-decoration: none;
+}
+
+.quick_tel p{
+  padding-top: 20px;
+}
+
+.bg_tel_ico{
+  background-image: url("../image/tel_ico.png") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 30% auto% 0 0;
+  position: relative;
+  top: 30px;
+  left:25%;
+  width: 50%;
+  height: 50%;
+}
+
+  /*subt_grp*/
+.subt_grp{
+  margin: 50px 10% 50px 10%;
+}
+
+.subtitle{
+  padding-top: 50px;
+}
