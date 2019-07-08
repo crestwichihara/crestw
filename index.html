@@ -7,10 +7,16 @@
     <!-- jQuery.jsの読み込み -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/mail.js"></script>
+    <script type="text/javascript" src="js/mail_mini.js"></script>
+
+
     <title>CrestWorks</title>
   </head>
 
   <body>
+    <div class="inner">
     <!--header-->
     <header class="gnavi">
       <div class="gnaviInner">
@@ -34,7 +40,7 @@
       <div class="top_contents" id="top">
         <div class="top_inner">
           <div class="cw">
-            <h1>Crest Works</h1>
+            <h1>Crest・Works</h1>
           </div>
           <div class="rightside_big">
             <h2>2D/3D Graphics</h2>
@@ -48,7 +54,7 @@
           <div class="quick_btn">
             <div class="quick_acs"></div>
             <div class="quick_map"><a href="https://goo.gl/maps/26hd75tqUQGDqdyW8"><div class="bg_map_ico"></div><p>Map</p></a></div>
-            <div class="quick_mail"><a href="mailto:crestw@crestw.co.jp"><div class="bg_mail_ico"></div><p>Mail</p></a></div>
+            <script type="text/javascript">secretaddress();</script>
             <div class="quick_tel"><a href="tel:03-3590-1655"><div class="bg_tel_ico"></div><p>Tel</p></a></div>
           </div>
         </div>
@@ -123,14 +129,14 @@
       <div class="subt_inside">
         <ul>
           <li>2D/3Dグラフィック制作</li>
-          <li>コンシューマゲームの開発（Nintendo Switch・Nintendo 3DS・PlayaStation4・PlayaStationVita　etc...）</li>
+          <li>コンシューマゲームの開発（Nintendo Switch・Nintendo 3DS・PlayStation4・PlayStationVita　etc...）</li>
           <li>ＰＣゲームの開発</li>
           <li>iPhone/Androidアプリ開発</li>
           <li>パチンコ・パチスロ液晶演出の開発</li>
             <ul>（コンテ作業、原画、動画、彩⾊、美術設定、背景、エフェクト、オーサリング）</ul>
           <li>グッズデザイン</li>
         </ul>
-        <p>※その他コンテンツ制作に関わる業務の詳細は弊社にご連絡の上、ご相談ください。</p>
+        <p id="works_indent">※その他コンテンツ制作に関わる業務の詳細は弊社にご連絡の上、ご相談ください。</p>
       </div>
       </div>
       <!--flow-->
@@ -189,10 +195,10 @@
           </div>
           <div class="subt_inside">
             <div>
-              <h2>2D/3Dデザイナー募集</h2>
+              <h2 id="txt_under_line">2D/3Dデザイナー募集</h2>
               <p>遊技機、コンシューマーゲーム、スマートフォン向けのアプリ開発など様々な分野に携わっていただきます。</p>
               <h2>業務内容</h2>
-              <ul>
+              <ul id="b_content">
                 <li>ゲーム：3Dキャラクターモデリング、モーション作成、背景データの作成、エフェクト作成等</li>
                 <li>
                   遊技機：CGムービー用のモデリングからコンポジットまで、スキルに合わせた仕事をお任せします。
@@ -204,6 +210,7 @@
                   <ul>ゲームソフト開発、遊技機映像制作、イラストなどの各種コンテンツ制作業務に幅広く従事しており、様々な分野で活躍できます。色々な分野に挑戦することでデザイン業務のスキルアップも行えるのが弊社の強みです。</ul>
                 </li>
               </ul>
+              <div class="treatment">
               <ul>
                 給与
                 <li>経験・実績を考慮</li>
@@ -237,7 +244,7 @@
                 <li>書類選考、面接（1~2回）</li>
                 <li>※また、在宅勤務希望の方もご相談ください。</li>
               </ul>
-
+              </div>
             </div>
           </div>
         </div>
@@ -250,14 +257,15 @@
         <div class="foot_txt">
           <p>株式会社クレスト・ワークス</p>
           <p>〒171-0014　東京都豊島区池袋２丁目５０−９ 第三共立ビル４階</p>
-          <p>TEL:03-3590-1655　E-MAIL:crestw@crestw.co.jp</p>
+          <p>TEL:03-3590-1655</p>
         </div>
         <div class="footer_btn">
           <div class="quick_map_f"><a href="https://goo.gl/maps/26hd75tqUQGDqdyW8"><div class="bg_map_ico"></div></a></div>
-          <div class="quick_mail_f"><a href="mailto:crestw@crestw.co.jp"><div class="bg_mail_ico"></div></a></div>
+          <script type="text/javascript">secretaddressmini();</script>
           <div class="quick_tel_f"><a href="tel:03-3590-1655"><div class="bg_tel_ico"></div></a></div>
         </div>
       </div>
     </footer>
   </body>
+</div>
 </html>

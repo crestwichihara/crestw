@@ -22,6 +22,12 @@ body{
   background-attachment: fixed;
   padding: 0px;
   margin: 0px;
+
+}
+
+.inner{
+   width:100%;
+   overflow:hidden;
 }
 
   /*navigation_menu*/
@@ -42,7 +48,7 @@ div.logo {
   height: 60px;
   position: absolute;
   top: 22px;
-  left: 20px;
+  left: 40px;
   /*transition:0.2s;*/
 }
 
@@ -56,7 +62,7 @@ nav ul li{
   width: 15%;
   height: auto;
   line-height: 60px;
-  font-size: 100%;
+  font-size: 1.5vw;
   font-weight: 900;
   text-align: center;
  }
@@ -77,6 +83,66 @@ nav ul li :hover{
   color: #FF6600;
   border-bottom: 3px solid #FF9900;
 }
+
+  /*navigation_menu_mobile*/
+@media only screen and (max-width: 720px){
+  .gnavi{
+    display: block;
+  }
+
+  nav ul li{
+    width: 100%;
+    float:none;
+    font-size: 3vw;
+    background-color: rgba(255,255,255, 1);
+  }
+
+  nav ul li:before{
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      width: 20px;
+      height: 20px;
+      margin-top: -10px;
+      background: #fff;
+    }
+    nav ul li a:before, nav ul li a:after{
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      width: 20px;
+      height: 4px;
+      background: #222;
+    }
+    nav ul li a:before{
+      margin-top: -6px;
+    }
+    nav ul li a:after{
+      margin-top: 2px;
+    }
+
+  div.quick_acs {
+    display: none;
+  }
+
+  .quick_map {
+      width: 175%;
+  }
+
+  .quick_mail {
+      width: 175%;
+  }
+
+  .quick_tel {
+      width: 175%;
+  }
+
+}
+
 
   /*top*/
 .top_contents{
@@ -106,7 +172,7 @@ nav ul li :hover{
 
 .rightside_mini{
   margin: 0px 5% 0px 5%;
-  font-size: 100%;
+  font-size: 2vw;
   float: right;
 }
 
@@ -244,6 +310,10 @@ nav ul li :hover{
 }
 
   /*subt_grp*/
+
+.bodyContainer{
+  overflow: hidden;
+}
 .subt_grp{
   margin: 50px 10% 50px 10%;
 }
@@ -274,6 +344,11 @@ h1.subtitle{
   background-size: 90%;
 }
 
+#works_indent{
+  margin-left: 18px;
+}
+
+
 #flow div h1{
   background-image: url("../image/flow_ico.png") ;
   background-repeat: no-repeat;
@@ -293,6 +368,58 @@ h1.subtitle{
   background-repeat: no-repeat;
   background-position: left;
   background-size: 50%;
+}
+
+
+#txt_under_line{
+  text-decoration:underline;
+}
+
+#b_content li{
+  list-style-type: none;
+  margin-bottom: 2em;
+  text-indent: -1em;
+}
+
+#b_content li ul{
+  position:relative;
+  left: -35px;
+  text-indent: 0;
+}
+
+#b_content li::before {
+  content: '';
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	border-radius: 100%;
+	background: #3F3F3F;
+	position: relative;
+	left: -10px;
+  top: 3px;
+}
+
+.treatment ul {
+  list-style: none;
+  position: relative;
+  left: -15px;
+  top: 3px;
+}
+
+.treatment ul::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: #3F3F3F;
+  position: relative;
+  left: -10px;
+  top: 3px;
+}
+
+.treatment ul li {
+  position:relative;
+  left: 20px;
 }
 
   /*map*/
@@ -322,7 +449,7 @@ h1.subtitle{
     margin-bottom: -16px;
     padding: 20px 5% 20px 5%;
     height: 110px;
-    font-size: 70%;
+    font-size:70%;
     font-weight: 100;
   }
 
@@ -338,10 +465,11 @@ h1.subtitle{
 }
 
 .foot_txt{
-  height: 80px;
+  height: 110px;
   width: auto;
   float:left;
   margin-left: 5%;
+  margin-right: 5%;
 }
 
 .footer_btn{
