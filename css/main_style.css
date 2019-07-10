@@ -465,6 +465,15 @@ h1.subtitle{
     float: none;
   }
 
+  /*form*/
+.form_main{
+  background-color: #FFF;
+  border-radius: 5px;
+  padding: 30px 10% 30px 10%;
+  margin: 100px 0 100px 0;
+
+}
+
 
   /*footer*/
   footer{
