@@ -471,8 +471,71 @@ h1.subtitle{
   border-radius: 5px;
   padding: 30px 10% 30px 10%;
   margin: 100px 0 100px 0;
-
 }
+
+summary{
+  text-align: center;
+  background-color: #FF9900;
+  border-radius: 5px;
+  color:#000;
+  box-shadow    : 1px 1px 1px #666666;
+}
+
+summary:hover{
+  background-color: #FFDD55;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  box-shadow: none;
+}
+
+
+input, textarea, select, button {
+  height: 50px;
+  width : 200px;
+  margin: 0;
+
+  -webkit-box-sizing: border-box; /* 過去の WebKit ベースブラウザ向け */
+     -moz-box-sizing: border-box; /* 過去の (Firefox <29) Gecko ベースブラウザ向け */
+          box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  background   : rgba(0,0,0,.1);
+  border-radius: 5px;
+  outline      : none;
+}
+
+#gender{
+    width:10%;
+    height: 20px;
+  }
+
+#pri_por{
+  float:left;
+  width:10%;
+  height: 20px;
+}
+
+#submitbtn{
+  border-radius: 5px;
+  background-color: #FF9900;
+  border-style: none;
+  color:#000;
+  height: 50px;
+  box-shadow    : 3px 3px 1px #666666;
+}
+
+#submitbtn:hover{
+  background-color: #FFDD55;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  box-shadow: none;
+}
+
 
 
   /*footer*/
