@@ -2,7 +2,7 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" type="image/png" href="image/favicon.ico">
+    <link rel="shortcut icon" href="image/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/main_style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&display=swap" rel="stylesheet">
     <!-- jQuery.jsの読み込み -->
@@ -11,6 +11,7 @@
     <script type="text/javascript" src="js/nav.js"></script>
     <script type="text/javascript" src="js/mail.js"></script>
     <script type="text/javascript" src="js/gototop.js"></script>
+    <script type="text/javascript" src="js/respomse.js"></script>
 
 
     <title>CrestWorks</title>
@@ -53,7 +54,7 @@
             <p>私たちは、2002年の創業以来、ゲーム、遊技機、アニメーション制作、グッズデザイン等、様々なコンテンツ制作を請け負い今日に至っております。<br>培って来た技術・ノウハウを活かし、お客様のご期待に応えられる様、これからも全力で挑戦し続けます。</p>
           </div>
           <div class="quick_btn">
-            <div class="quick_acs"><div id="qui_ico"></div><p id="qui_acs_inner">Quick Access!</p></div>
+            <div class="quick_acs"><div id="qui_ico"></div><p id="qui_acs_inner">Quick Access! →</p></div>
             <div class="quick_map"><a href="https://goo.gl/maps/26hd75tqUQGDqdyW8"><div class="bg_map_ico"></div><p>Map</p></a></div>
             <script type="text/javascript">secretaddress();</script>
             <div class="quick_tel"><a href="tel:03-3590-1655"><div class="bg_tel_ico"></div><p>Tel</p></a></div>
@@ -272,11 +273,11 @@
                   <p><label for="gender">性別</label></p>
                   <ul class="selectradio selectradio-inline">
                     <li class="selectradio-item">
-                      <input id="select2-1" type="radio" name="entry.794028199" valu="男" required>
+                      <input id="select2-1" type="radio" name="entry.794028199" value="男" required>
                       <label for="select2-1" class="selectradio-label">男</label>
                     </li>
                     <li class="selectradio-item">
-                      <input id="select2-2" type="radio" name="entry.794028199" valu="女" required>
+                      <input id="select2-2" type="radio" name="entry.794028199" value="女" required>
                       <label for="select2-2" class="selectradio-label">女</label>
                     </li>
                   </ul>
@@ -303,13 +304,14 @@
 
                   <ul class="selectcheck selectchesck-inline">
                     <li class="selectcheck-item">
-                      <input id="check1" type="checkbox" name="entry.1436866390" placeholder="" required>
+                      <input id="check1" type="checkbox" name="entry.1436866390" value="ok" placeholder="" required>
                       <label for="check1" class="selectcheck-label">同意する</label>
                     </li>
                   </ul>
                     <button id="submitbtn" type="submit" name="button" value="送信">送信</button>
                   </p>
                 </form>
+
               </details>
               </div>
             </div>

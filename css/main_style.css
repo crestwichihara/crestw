@@ -194,9 +194,9 @@ nav ul li :hover{
   margin: auto 2px auto 0;
   border-radius: 10px 0 0 10px;	/* 左上・右上・右下・左下 */
 }
-
+/*
 #qui_ico{
-  background-image: url(../image/quick_ico.png);
+  background-image: url("../image/quick_ico.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 90%;
@@ -205,18 +205,16 @@ nav ul li :hover{
   left: 20px;
   top: 30px;
 }
+*/
 
 #qui_acs_inner {
   display: block;
   text-align: center;
   color: #FFF;
-  font-size: 3vw;
   height:auto;
+  font-size: 200%;
   width: 100%;
-  position: relative;
-  top: -50px;
-  left: -20px;
-
+  line-height:75px;
 }
 
 .quick_map a{
@@ -559,6 +557,7 @@ input:focus, textarea:focus {
   height: 50px;
   box-shadow    : 3px 3px 1px #666666;
   margin-top: 50px;
+  font-size: 100%;
 }
 
 #submitbtn:hover{
