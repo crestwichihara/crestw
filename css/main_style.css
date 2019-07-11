@@ -435,7 +435,7 @@ h1.subtitle{
   width: 16px;
   height: 16px;
   display: inline-block;
-  background: #3F3F3F;
+  background: # ;
   position: relative;
   left: -10px;
   top: 3px;
@@ -445,6 +445,22 @@ h1.subtitle{
   position:relative;
   left: 20px;
 }
+
+#spiral::before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url("../image/spiral_ico.png");
+    background-size: contain;
+    vertical-align: middle;
+  }
+
+  #spiral{
+    list-style: none;
+    text-indent: -1em;
+  }
+
 
   /*map*/
   .gmap_position{
@@ -463,6 +479,7 @@ h1.subtitle{
     height: 300px;
     width: 100%;
     float: none;
+    font-size: 2vw;
   }
 
   /*form*/
@@ -471,6 +488,22 @@ h1.subtitle{
   border-radius: 5px;
   padding: 30px 10% 30px 10%;
   margin: 100px 0 100px 0;
+}
+
+/* 開いている状態 */
+details[open] .do-open {
+	display: none ;
+}
+
+/* 閉じている状態 */
+details:not([open]) .do-close {
+	display: none ;
+}
+
+.redtxt{
+  color: #F00;
+  font-weight: 200;
+  font-size: 90%;
 }
 
 summary{
@@ -525,6 +558,7 @@ input:focus, textarea:focus {
   color:#000;
   height: 50px;
   box-shadow    : 3px 3px 1px #666666;
+  margin-top: 50px;
 }
 
 #submitbtn:hover{
@@ -536,6 +570,95 @@ input:focus, textarea:focus {
   box-shadow: none;
 }
 
+.selectradio {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+  .selectradio .selectradio-item {
+    margin: 5px 0;
+    padding: 0;
+  }
+
+  .selectradio input[type="radio"] {
+    display: none;
+  }
+
+  .selectradio input[type="radio"]:checked + label {
+    background: #FF9900;
+    color: #333333;
+  }
+
+  .selectradio .selectradio-label {
+    display: block;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    padding: 0 5px;
+    cursor: pointer;
+    color: #333333;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background: #AAA;
+    transition: 0.5s;
+    border-radius: 4px;
+  }
+
+.selectradio.selectradio-inline .selectradio-item {
+  display: inline-block;
+}
+
+.selectradio.selectradio-inline .selectradio-label {
+  display: inline-block;
+  width: 85px;
+}
+
+.selectcheck {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+  .selectcheck .selectcheck-item {
+    margin: 5px 0;
+    padding: 0;
+  }
+
+  .selectcheck input[type="checkbox"] {
+    display: none;
+  }
+
+  .selectcheck input[type="checkbox"]:checked + label {
+    background: #FF9900;
+    color: #FFF;
+  }
+
+  .selectcheck .selectcheck-label {
+    display: block;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    padding: 0 5px;
+    cursor: pointer;
+    color: #333333;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background: #AAA;
+    transition: 0.5s;
+    border-radius: 4px;
+  }
+
+.selectcheck.selectcheck-inline .selectcheck-item {
+  display: inline-block;
+}
+
+.selectcheck.selectcheck .selectcheck-label {
+  display: inline-block;
+  width: 185px;
+}
 
 
   /*footer*/
@@ -544,125 +667,60 @@ input:focus, textarea:focus {
     background-color: #7F7F7F;
     margin-bottom: -16px;
     padding: 20px 5% 20px 5%;
-    height: 110px;
-    font-size:70%;
+    height: 150px;
     font-weight: 100;
   }
 
 .footer_logo{
   background-image: url("../image/cwlogo_mini.png");
-  background-size: cover;
-  width: 115px;
-  height: 60px;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
   position: relative;
   top: 22px;
   left: 20px;
-  float:left;
+  float: left;
 }
 
 .foot_txt{
-  height: 110px;
-  width: auto;
-  float:left;
+  height: 100%;
+  width: 100%;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-.footer_btn{
-  position: relative;
-  left: 60px;
-  top: 25px;
+#corp{
+    margin-top: 10px;
+    width:auto;
+    height:100%;
+    margin-top: 10px;
 }
 
-.quick_map_f a{
-    display:table-cell;
-    background-color: #3F3F3F;
-    width: 8%;
-    height: 50px;
-    float: left;
-    margin: auto 2px auto 0;
-    border-radius: 10px 10px 10px 10px;	/* 左上・右上・右下・左下 */
-    text-decoration: none;
+/* 上に戻るボタン */
+.pagetop {
+	color: #fff;
+	background-color: rgba(0,0,0,0.3);
+	text-decoration: none;
+	display: none;
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	font-size: 1.5rem;
+	width: 3.3rem;
+	height: 3.3rem;
+	line-height: 3.3rem;
+	border-radius: 5%;
+	text-align: center;
+	cursor: pointer;
 }
 
-.quick_map_f p{
-  padding-top: 5px;
-}
-
-.quick_mail_f a{
-  display:table-cell;
-  background-color: #3F3F3F;
-  width: 8%;
-  height: 50px;
-  float: left;
-  margin: auto 2px auto 0;
-  border-radius: 10px 10px 10px 10px;	/* 左上・右上・右下・左下 */
-  text-decoration: none;
-}
-
-.quick_mail_f p{
-  padding-top: 5px;
-}
-
-.quick_tel_f a{
-  display:table-cell;
-  background-color: #3F3F3F;
-  width: 8%;
-  height: 50px;
-  float: left;
-  margin: auto 2px auto 0;
-  border-radius: 10px 10px 10px 10px;	/* 左上・右上・右下・左下 */
-  text-decoration: none;
-}
-
-.quick_tel_f p{
-  padding-top: 5px;
-}
-
-.quick_map_f .bg_map_ico{
-  position: relative;
-  top: 25%;
-  left:25%;
-  width: 50%;
-  height: 50%;
-}
-
-.quick_map_f :hover{
-    background-color: #AAA;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-}
-
-.quick_mail_f .bg_mail_ico{
-  position: relative;
-  top: 25%;
-  left:25%;
-  width: 50%;
-  height: 50%;
-}
-
-.quick_mail_f :hover{
-    background-color: #AAA;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-}
-
-.quick_tel_f .bg_tel_ico{
-  position: relative;
-  top: 25%;
-  left:25%;
-  width: 50%;
-  height: 50%;
-}
-
-.quick_tel_f :hover{
-    background-color: #AAA;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
+.pagetop:hover {
+	color: #fff !important;
+	background-color: #ed702b;
+	text-decoration: none;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }

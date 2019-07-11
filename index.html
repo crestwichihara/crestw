@@ -10,7 +10,7 @@
     <script type="text/javascript" src="js/scroll.js"></script>
     <script type="text/javascript" src="js/nav.js"></script>
     <script type="text/javascript" src="js/mail.js"></script>
-    <script type="text/javascript" src="js/mail_mini.js"></script>
+    <script type="text/javascript" src="js/gototop.js"></script>
 
 
     <title>CrestWorks</title>
@@ -150,7 +150,9 @@
           </h2>
         </div>
         <div class="subt_inside">
-          <p>「イラスト1枚だけ頼みたいのだけれど、納期が短くても大丈夫？」などのご相談承ります。</p>
+          <ul>
+            <li id="spiral">「イラスト1枚だけ頼みたいのだけれど、納期が短くても大丈夫？」などのご相談承ります。</li>
+          </ul>
           <p>ご依頼までの流れは以下の通りです。</p>
           <ol>
             <li>制作内容、納期、ご予算等がお決まりの際にはお問い合わせよりご連絡ください。<br>ご予算がお決まりでない場合やご依頼の内容が検討段階といった場合のお問い合わせも大歓迎です。<br>お気軽にご相談ください。</li>
@@ -247,12 +249,15 @@
               </div>
               <div class="form_main">
                 <details>
-                  <summary>採用フォームはこちらをクリック(タップ)してください</summary>
+                  <summary>
+                    <span class="do-open">採用フォームはこちらをクリック(タップ)</span>
+		                <span class="do-close">閉じる×</span>
+                  </summary>
                 <h2>
                   <p>採用応募フォーム</p>
                 </h2>
                 <p>クレスト・ワークスの採用応募フォームです。各項目をご記入の上、送信ボタンをクリックしてください。</p>
-                <p>※英数字はすべて半角で入力してください。<br>※応募後、弊社採用担当者よりメールでご連絡をさせていただきます。</p>
+                <p class="redtxt">※英数字はすべて半角で入力してください。<br>※応募後、弊社採用担当者よりメールでご連絡をさせていただきます。</p>
 
                 <form action="https://docs.google.com/forms/d/e/1FAIpQLSflDHSwNcAKaspUoiXWKVHXGP0S3YgxgKefxM4Pva-p9GDd3Q/formResponse">
                   <p>
@@ -263,15 +268,22 @@
                     <label for="ruby">ふりがな</label>
                   </p>
                   <input id="ruby" type="text" name="entry.45252546" placeholder="ひらがな・全角・スペースなし" required>
+
                   <p><label for="gender">性別</label></p>
-                  <p>
-                    <input id="gender" type="radio" name="entry.794028199" valu="male" required>男
-                    <input id="gender" type="radio" name="entry.794028199" valu="female" required>女
-                  </p>
+                  <ul class="selectradio selectradio-inline">
+                    <li class="selectradio-item">
+                      <input id="select2-1" type="radio" name="entry.794028199" valu="男" required>
+                      <label for="select2-1" class="selectradio-label">男</label>
+                    </li>
+                    <li class="selectradio-item">
+                      <input id="select2-2" type="radio" name="entry.794028199" valu="女" required>
+                      <label for="select2-2" class="selectradio-label">女</label>
+                    </li>
+                  </ul>
                   <p>
                     <label for="birth">生年月日</label>
                   </p>
-                  <input id="birth" type="date" name="entry.760913348" placeholder="" required>
+                  <input id="birth" type="date" name="entry.760913348" placeholder="選択してください" required>
                   <p>
                     <label for="tel">電話番号</label>
                   </p>
@@ -288,8 +300,13 @@
                     <label for="pri_por">プライバシーポリシー</label>
                   </p>
                   <p>フォームにご記入いただきました皆様の個人情報は、個人情報保護方針に基づき取り扱わせていただきます。</p>
-                  <input id="pri_por" type="checkbox" name="entry.1436866390" placeholder="" required>
-                  <p>同意する</p>
+
+                  <ul class="selectcheck selectchesck-inline">
+                    <li class="selectcheck-item">
+                      <input id="check1" type="checkbox" name="entry.1436866390" placeholder="" required>
+                      <label for="check1" class="selectcheck-label">同意する</label>
+                    </li>
+                  </ul>
                     <button id="submitbtn" type="submit" name="button" value="送信">送信</button>
                   </p>
                 </form>
@@ -303,19 +320,16 @@
     <footer class="footer">
       <div class="inner">
         <div class="footer_logo">
+
         </div>
+
         <div class="foot_txt">
-          <p>株式会社クレスト・ワークス</p>
-          <p>〒171-0014　東京都豊島区池袋２丁目５０−９ 第三共立ビル４階</p>
-          <p>TEL:03-3590-1655</p>
+          <p>株式会社クレスト・ワークス<br>〒171-0014　東京都豊島区池袋２丁目５０−９ 第三共立ビル４階<br>TEL:03-3590-1655</p>
         </div>
-        <div class="footer_btn">
-          <div class="quick_map_f"><a href="https://goo.gl/maps/26hd75tqUQGDqdyW8"><div class="bg_map_ico"></div></a></div>
-          <script type="text/javascript">secretaddressmini();</script>
-          <div class="quick_tel_f"><a href="tel:03-3590-1655"><div class="bg_tel_ico"></div></a></div>
-        </div>
+          <small id="corp">© 2019 CrestWorks ,inc.</small>
       </div>
     </footer>
+    <div class="pagetop">↑</div>
   </body>
 </div>
 </html>
