@@ -405,19 +405,44 @@ h1.subtitle{
   /*map*/
   .gmap_position{
     padding:10px 10px 10px 10px;
-    margin-right: 10%;
     display: inline-block;
-    width: 100%;
+    width: 98%;
     height: 500px;
     background-color: #999;
     border-radius: 5px;
   }
 
   .map_guide{
-    margin: 100px 0 0px 0;
-    width: 100%;
-    float: none;
+    display: block;
+    margin: 80px 0 0px 0;
+    padding: 20px;
+    width: 50%;
+    height: 360px;
+    float: right;
+    background-color: #FFF;
+
   }
+
+#buil{
+  display: block;
+  margin: 80px 0 0 0;
+  background-image: url("../image/buil.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:300px;
+  height: 400px;
+  opacity: 0.75;
+  z-index: -100;
+}
+
+#buil:hover{
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
 
 #redtxt{
   color:#F00;
