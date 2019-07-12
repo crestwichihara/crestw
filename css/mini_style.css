@@ -1,0 +1,63 @@
+/*navigation_menu_mobile*/
+
+@media only screen and (max-width: 980px){
+/*
+.gnavi{
+  display: block;
+}
+
+nav ul li{
+  width: 100%;
+  float:none;
+  font-size: 3vw;
+  background-color: rgba(255,255,255, 1);
+}
+
+nav ul li:before{
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  background: #fff;
+}
+
+nav ul li a:before, nav ul li a:after{
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 20px;
+  height: 4px;
+  background: #222;
+}
+
+nav ul li a:before{
+margin-top: -6px;
+}
+nav ul li a:after{
+margin-top: 2px;
+}
+*/
+
+div.quick_acs {
+display: none;
+}
+
+.quick_map {
+width: 175%;
+}
+
+.quick_mail {
+width: 175%;
+}
+
+.quick_tel {
+width: 175%;
+}
+
+}
