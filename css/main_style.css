@@ -416,11 +416,11 @@ h1.subtitle{
     display: block;
     margin: 0 0 20px 0;
     padding: 10px;
-    width: 94%;
+    width: 98%;
     height: 120px;
     background-color: #FFF;
     border-radius: 5px;
-    border: 20px solid #FFF;
+    border-top: 20px solid #FFF;
     background-image: url("../image/buil.png");
     background-repeat: no-repeat;
     background-size: contain;
