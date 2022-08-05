@@ -86,24 +86,31 @@ nav ul li :hover{
 
   /*top*/
   .top_contents{
+    /*
     background-image: url("../image/trianglify_BG_top.png");
     background-size: cover;
+    */
     width: auto;
-    height: 1024px;
-    margin-top: -16px;
-    padding: 0;
+    height:71vw;
+    padding: 0px;
   }
 
-  .cw{
-    padding: 100px 5% 0px 5%;
-    color: #FFFFFF;
-    font-size: 175%;
+  .top_inner{
+    padding-top: 100px;
+    height:auto;
+  }
+
+  #sec_top{
+    padding-top: 20px;
+    width: auto;
+    height: 45vw;
+
   }
 
   .rightside_big{
     margin: 50px 5% 50px 5%;
     text-align: right;
-    font-size: 150%;
+    font-size: 80%;
     line-height: 15px;
     color: #3F3F3F;
     font-weight: 900;
@@ -118,10 +125,10 @@ nav ul li :hover{
   /*quick_btn*/
   .quick_btn{
     position: relative;
-    top:100px;
+    top:50px;
     margin: auto 5% auto 5%;
     width: 90%;
-    height: 100px;
+    height: 200px;
     float: left;
   }
 
@@ -548,7 +555,7 @@ summary:hover{
 }
 
 
-input, textarea, select, button {
+input, select, button {
   height: 50px;
   width : 200px;
   margin: 0;
@@ -783,15 +790,17 @@ input:focus, textarea:focus {
   height: auto;
   width: 100%;
   padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
   background-color: #555;
   border-radius: 5px;
 }
 
 #bg_movie_top{
-  position:relative;
-  filter: brightness(75%);
-  top:-350px;
-  z-index: 1;
+  position: absolute;
+  top: 100px;
+  z-index: -1;
+  padding-bottom: 5px;
+  background-color: #FF6600;
 }
 
 #movie_title{
@@ -811,6 +820,11 @@ input:focus, textarea:focus {
 
 #video2, #video3, #video4, #video5, #video6, #video7, #video8{
     display: none;
+}
+
+#video_sig{
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 textarea {
